@@ -41,24 +41,6 @@ python src/validate_smoke_results.py
 Smoke mode checks the installation with reduced numerical settings. It is not
 used for the reported numerical results.
 
-## Full run
-
-Linux or macOS:
-
-```bash
-bash run_full_local.sh
-```
-
-Windows PowerShell:
-
-```powershell
-.\run_full_local.ps1
-```
-
-The full run uses deterministic random seeds. It writes numerical output to
-`results/`, figures to `figures/`, and finishes by running the full validation
-checks.
-
 ## Source layout
 
 - `src/network_model.py` contains the numerical model and linear-algebra tools.

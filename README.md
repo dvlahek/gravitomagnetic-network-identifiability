@@ -50,7 +50,7 @@ python src/run_experiments.py --mode full
 python src/run_physical_campaign.py --mode full
 python -m pytest -q
 python src/validate_full_results.py
-
+```
 ## Source layout
 
 - `src/network_model.py` contains the numerical model and linear-algebra tools.
@@ -70,6 +70,9 @@ R_Gamma = -4 integral_Gamma A . dx
 ```
 
 The physical benchmark restores SI factors explicitly.
+## License
+
+Released under the MIT License.
 
 ## Contact
 

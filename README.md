@@ -41,6 +41,16 @@ python src/validate_smoke_results.py
 Smoke mode checks the installation with reduced numerical settings. It is not
 used for the reported numerical results.
 
+## Full numerical run
+
+The numerical results reported in the accompanying study can be regenerated with:
+
+```bash
+python src/run_experiments.py --mode full
+python src/run_physical_campaign.py --mode full
+python -m pytest -q
+python src/validate_full_results.py
+
 ## Source layout
 
 - `src/network_model.py` contains the numerical model and linear-algebra tools.
@@ -60,10 +70,6 @@ R_Gamma = -4 integral_Gamma A . dx
 ```
 
 The physical benchmark restores SI factors explicitly.
-
-## Citation
-
-Citation information will be added with the archived public release.
 
 ## Contact
 
